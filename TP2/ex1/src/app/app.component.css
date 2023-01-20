@@ -1,0 +1,7 @@
+.toolbar {
+  width: 40%;
+  display: flex;
+}
+.toolbar > * {
+  margin: 10px;
+}

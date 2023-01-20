@@ -1,0 +1,10 @@
+<div class="container-fluid">
+	<div class="toolbar">
+		<input type="color" [(ngModel)]="color" class="form-control" style="height: 35px;">
+		<input type="number" placeholder="fontSize" [(ngModel)]="fontSize" class="form-control">
+		<select [(ngModel)]="fontFamily" class="form-select">
+			<option *ngFor="let font of fonts" [value]="font">{{font}}</option>
+		</select>
+	</div>
+	<textarea class="form-control" [ngStyle]="{ color: color, fontSize: fontSize + 'px', fontFamily: fontFamily }">Test Paragraph!</textarea>
+</div>
